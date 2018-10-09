@@ -127,7 +127,7 @@ int main()
        for(int i=0;i<n;i++)
         printf("%d ",b[i]);
        printf("\n");
-
+       printf("\n");
     }
     return 0;
 }
