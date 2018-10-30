@@ -1,0 +1,31 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+
+    int t;
+    cin>>t;
+    while(t--)
+    {
+       long int a,b,c,df,k,l,ans;
+        cin>>a>>b>>c;
+        k=b-a;
+        l=c-b;
+        if(a+c==2*b)
+            ans=0;
+        else
+        {
+            if((k*l)<0)
+            {
+                ans=ceil((double)(abs(k)+abs(l))/2);
+            }
+            else
+            {
+                df=abs(k-l);
+                ans=ceil((double)df/2);
+            }
+        }
+       cout<<ans<<endl;
+    }
+    return 0;
+}
